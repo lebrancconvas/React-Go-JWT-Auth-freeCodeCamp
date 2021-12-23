@@ -1,17 +1,13 @@
 package main
 
 import (
-	"github.com/gofiber/fiber/v2"
-	"gorm.io/gorm"
-	"gorm.io/driver/mysql" 
+	"github.com/lebrancconvas/React-Go-JWT-Auth-freeCodeCamp/database"  
+	"github.com/gofiber/fiber/v2" 
 )
 
 func main() {
-		_, err := gorm.Open(mysql.Open("root@/reactgo-auth"), &gorm.Config{})  
+		database.Connect() 
 
-		if err != nil {
-			panic("Couldn't connect with the database.") 
-		}
     app := fiber.New()
 
     app.Get("/", func(c *fiber.Ctx) error {
