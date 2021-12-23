@@ -11,11 +11,11 @@ freeCodeCamp Tutorial about "React and Golang JWT Authentication".
 
 ## Tools 
 ### Front-End 
-	ReactJS 
+- [ReactJS](https://reactjs.org/)
 ### Back-End 
-	Golang 
+- [Golang](https://go.dev/)
 ### Text Editor 
-	Visual Studio Code 
+- [Visual Studio Code](https://code.visualstudio.com/) 
 
 ## Resource 
 - [(Video) EN: React and Golang JWT Authentication - Tutorial (by freeCodeCamp)](https://www.youtube.com/watch?v=d4Y2DkKbxM0) 
