@@ -3,9 +3,9 @@
 freeCodeCamp Tutorial about "React and Golang JWT Authentication". 
 
 ## Purpose 
-	- Improving my web development skill. 
-	- Learning about how to work with React and Golang. 
-	- Learning about how to make a JWT Authentication. 
+- Improving my web development skill. 
+- Learning about how to work with React and Golang. 
+- Learning about how to make a JWT Authentication.  
 
 ## Feature 
 
