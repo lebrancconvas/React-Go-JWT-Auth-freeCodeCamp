@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"github.com/lebrancconvas/React-Go-JWT-Auth-freeCodeCamp/models" 
+	"github.com/lebrancconvas/React-Go-JWT-Auth-freeCodeCamp/database" 
 	"github.com/gofiber/fiber/v2" 
 	"golang.org/x/crypto/bcrypt" 
 )
@@ -19,6 +20,8 @@ func Register(c *fiber.Ctx) error {
 		Username: data["username"],
 		Password: password,   
 	}  
+
+	database.DB.Create(&user) 
 
 	return c.JSON(user)  
 } 
