@@ -15,4 +15,4 @@ freeCodeCamp Tutorial about "React and Golang JWT Authentication".
 ### Others 
 
 ## Resource 
-	- [(Video) EN: React and Golang JWT Authentication - Tutorial (by freeCodeCamp)](https://www.youtube.com/watch?v=d4Y2DkKbxM0) 
+- [(Video) EN: React and Golang JWT Authentication - Tutorial (by freeCodeCamp)](https://www.youtube.com/watch?v=d4Y2DkKbxM0) 
