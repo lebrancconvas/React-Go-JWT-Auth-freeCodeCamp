@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/lebrancconvas/React-Go-JWT-Auth-freeCodeCamp/database"  
-	"github.com/gofiber/fiber/v2" 
+	"github.com/lebrancconvas/React-Go-JWT-Auth-freeCodeCamp/database"   
+    "github.com/lebrancconvas/React-Go-JWT-Auth-freeCodeCamp/routes" 
+    "github.com/gofiber/fiber/v2" 
 )
 
 func main() {
@@ -10,9 +11,9 @@ func main() {
 
     app := fiber.New()
 
-    app.Get("/", func(c *fiber.Ctx) error {
-        return c.SendString("Hello, World 👋!")
-    })
+    routes.Setup(app) 
+
+    
 
     app.Listen(":3000")
 } 
