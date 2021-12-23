@@ -1,4 +1,4 @@
-package main
+package main  
 
 import (
 	"github.com/lebrancconvas/React-Go-JWT-Auth-freeCodeCamp/database"   
