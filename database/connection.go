@@ -5,7 +5,7 @@ import (
 )
 
 func Connect() { 
-	_, err := gorm.Open(mysql.Open("root@/reactgo-auth"), &gorm.Config{})  
+		_, err := gorm.Open(mysql.Open("root@/reactgo-auth"), &gorm.Config{})  
 
 		if err != nil {
 			panic("Couldn't connect with the database.") 
