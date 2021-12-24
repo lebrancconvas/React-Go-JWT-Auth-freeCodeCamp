@@ -17,7 +17,12 @@ function App() {
 
 				const content = await response.json(); 
 
-				setName(content.name);  
+        if(content.name === undefined) {
+          setName('');  
+        } else {
+          setName(content.name); 
+        }
+
 			}
 		)();
 	});    

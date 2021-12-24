@@ -25,8 +25,7 @@ const Loginpage = (props: {setName: (name: string) => void}) => {
 		
 		setRedirect(true);
 
-		const changeName = () => props.setName(content.name);  
-		changeName(); 
+		props.setName(content.name);  
 	}; 
 
 	if(redirect) {
