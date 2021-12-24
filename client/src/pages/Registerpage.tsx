@@ -1,11 +1,15 @@
 import React from 'react'; 
 import {Typography, Button, TextField} from '@mui/material';
 import {Box} from '@mui/system'; 
+import Navbar from '../components/Navbar'; 
 
 const Registerpage = () => {
 	return (
 		<div>
-			<Box sx={{textAlign: 'center'}}>  
+			<Box>
+				<Navbar /> 
+			</Box>
+			<Box sx={{textAlign: 'center'}} mt={2}>   
 				<Typography variant="h2"> 
 					Register
 				</Typography>
