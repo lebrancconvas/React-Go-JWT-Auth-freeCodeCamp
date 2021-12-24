@@ -5,6 +5,7 @@ import {useNavigate} from 'react-router-dom';
 
 const Navbar = () => {
 	const navigate = useNavigate(); 
+	const toHome = () => navigate('/'); 
 	const toRegister = () => navigate('/register'); 
 	const toLogin = () => navigate('/login');  
 	return (
@@ -12,7 +13,7 @@ const Navbar = () => {
 			<Box sx={{flexGrow: 1}}>
 				<AppBar position="static"> 
 					<Toolbar>
-						<Typography variant="h6" component="div" sx={{flexGrow: 1}}> 
+						<Typography variant="h6" component="div" sx={{flexGrow: 1}} onClick={toHome}>  
 							React-Go-Auth 
 						</Typography>
 						<Button color="inherit" onClick={toRegister}>  
