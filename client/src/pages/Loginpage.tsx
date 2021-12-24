@@ -2,16 +2,16 @@ import React, {SyntheticEvent, useState} from 'react';
 import {Navigate} from 'react-router-dom'; 
 import {Typography, Button, TextField} from '@mui/material';
 import {Box} from '@mui/system'; 
-import Navbar from '../components/Navbar'; 
+// import Navbar from '../components/Navbar'; 
 
-const Loginpage = () => {
+const Loginpage = (props: {setName: (name: string) => void}) => { 
 	const [username, setUsername] = useState(''); 
 	const [password, setPassword] = useState(''); 
 	const [redirect, setRedirect] = useState(false);  
 	const loginSubmit = async(e: SyntheticEvent) => {
 		e.preventDefault(); 
 		
-		await fetch('http://localhost:3002/api/login', {
+		const response = await fetch('http://localhost:3002/api/login', {
 			method: 'POST',
 			headers: {'Content-Type': 'application/json'},
 			credentials: 'include',
@@ -21,7 +21,12 @@ const Loginpage = () => {
 			})
 		})
 
+		const content = await response.json(); 
+		
 		setRedirect(true);
+
+		const changeName = () => props.setName(content.name);  
+		changeName(); 
 	}; 
 
 	if(redirect) {
@@ -30,9 +35,6 @@ const Loginpage = () => {
 
 	return (
 		<div>
-			<Box>
-				<Navbar /> 
-			</Box>
 			<Box sx={{textAlign: 'center'}} mt={2}>   
 				<Typography variant="h2"> 
 					Login 

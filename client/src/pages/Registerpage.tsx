@@ -2,7 +2,7 @@ import React, {SyntheticEvent, useState} from 'react';
 import {Navigate} from 'react-router-dom';  
 import {Typography, Button, TextField} from '@mui/material';
 import {Box} from '@mui/system'; 
-import Navbar from '../components/Navbar'; 
+// import Navbar from '../components/Navbar'; 
 
 const Registerpage = () => {
 	const [username, setUsername] = useState(''); 
@@ -31,9 +31,6 @@ const Registerpage = () => {
 
 	return (
 		<div>
-			<Box>
-				<Navbar /> 
-			</Box>
 			<Box sx={{textAlign: 'center'}} mt={2}>   
 				<Typography variant="h2"> 
 					Register
