@@ -40,7 +40,7 @@ const Registerpage = () => {
 				</Typography>
 			</Box>
 			<Box mt={3} sx={{textAlign: 'center'}}>  
-				<form> 
+				<form onSubmit={registerSubmit}>  
 					<Box>
 						<TextField style={{width: '50%'}} type="text" placeholder="Username" onChange={e => setUsername(e.target.value)} required />  
 					</Box>
@@ -48,7 +48,7 @@ const Registerpage = () => {
 						<TextField style={{width: "50%"}} type="password" placeholder="Password" onChange={e => setPassword(e.target.value)} required /> 
 					</Box>
 					<Box mt={2}> 
-						<Button type="submit" variant="contained" onClick={registerSubmit}>Register</Button> 
+						<Button type="submit" variant="contained">Register</Button> 
 					</Box>
 				</form>
 			</Box>
