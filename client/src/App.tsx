@@ -4,6 +4,7 @@ import Registerpage from './pages/Registerpage';
 import Loginpage from './pages/Loginpage'; 
 import Homepage from './pages/Homepage'; 
 import Navbar from './components/Navbar'; 
+import Profile from './pages/content/Profile'; 
 
 function App() {
   const [name, setName] = useState(''); 
@@ -35,6 +36,7 @@ function App() {
           <Route path="/" element={<Homepage name={name} />} />  
           <Route path="/register" element={<Registerpage />} /> 
           <Route path="/login" element={<Loginpage setName={setName} />} />   
+         <Route path="/profile" element={<Profile name={name} />} />   
         </Routes>
       </Router>
     </div>
