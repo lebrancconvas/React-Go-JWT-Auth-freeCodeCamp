@@ -3,6 +3,7 @@ import {Typography, Button} from '@mui/material';
 import {Box} from '@mui/system'; 
 // import Navbar from '../components/Navbar'; 
 import {useNavigate} from 'react-router-dom'; 
+import Firstpage from './Firstpage'; 
 
 const Homepage = (props: {name: string}) => {
 	const navigate = useNavigate(); 
@@ -12,13 +13,7 @@ const Homepage = (props: {name: string}) => {
 	
 	if(props.name) {
 		home = (
-			<div>
-				<Box sx={{textAlign: 'center'}} mt={2}> 
-					<Typography variant="h3"> 
-						{`Welcome ${props.name}`}  
-					</Typography>
-				</Box>
-			</div>
+			<Firstpage name={props.name} /> 
 		); 
 	} else {
 		home = (
