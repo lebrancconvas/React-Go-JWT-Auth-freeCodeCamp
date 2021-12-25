@@ -23,9 +23,14 @@ const Loginpage = (props: {setName: (name: string) => void}) => {
 
 		const content = await response.json(); 
 		
-		setRedirect(true);
-
-		props.setName(content.name);  
+		if(content.message === "User not found.") {
+			alert("User not found"); 
+		} else if(content.message === "Incorrect Password.") { 
+			alert("Your password is incorrect"); 
+		} else {
+			setRedirect(true);
+			props.setName(content.name);  
+		}
 	}; 
 
 	if(redirect) {
