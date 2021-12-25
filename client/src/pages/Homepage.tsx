@@ -20,12 +20,12 @@ const Homepage = (props: {name: string}) => {
 			<div>
 				<Box sx={{textAlign: 'center'}} mt={2}> 
 					<Typography variant="h3"> 
-						You are not logged in. 
+						Soomlek Mathematics Quiz  
 					</Typography>
 				</Box>
-				<Box sx={{textAlign: 'center'}}>
-					<Button variant="contained" onClick={toRegister}>Register</Button> 
-					<Button variant="contained" onClick={toLogin}>Login</Button>  
+				<Box sx={{textAlign: 'center'}} mt={2}> 
+					<Button variant="contained" onClick={toRegister}>Get Started</Button> 
+					<Button variant="contained" onClick={toLogin} sx={{marginLeft: 2}}>Login</Button>   
 				</Box>
 			</div>
 		)

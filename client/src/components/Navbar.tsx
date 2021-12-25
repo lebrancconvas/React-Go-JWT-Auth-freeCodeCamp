@@ -27,8 +27,8 @@ const Navbar = (props: {name: string, setName: (name: string) => void}) => {
 			<Box sx={{flexGrow: 1}}>
 				<AppBar position="static"> 
 					<Toolbar>
-						<Typography variant="h6" component="div" sx={{flexGrow: 1}} onClick={toHome}>  
-							React-Go-Auth 
+						<Typography variant="h6" component="div" sx={{flexGrow: 1}} onClick={toHome} style={{cursor: 'pointer'}}>   
+							Soomlek 
 						</Typography>
 						<Button color="inherit" onClick={toRegister}>  
 							Register 
