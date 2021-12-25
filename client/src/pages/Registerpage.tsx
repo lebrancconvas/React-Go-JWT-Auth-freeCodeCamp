@@ -11,7 +11,7 @@ const Registerpage = () => {
 	const registerSubmit = async(e: SyntheticEvent) => {
 		e.preventDefault(); 
 
-		await fetch('http://localhost:3002/api/register', {
+		const response = await fetch('http://localhost:3002/api/register', {
 			method: 'POST',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
@@ -19,6 +19,8 @@ const Registerpage = () => {
 				password 
 			})
 		}); 
+
+		const content = await response.json(); 
 		
 		setRedirect(true); 
 		//const content = response.json(); 
