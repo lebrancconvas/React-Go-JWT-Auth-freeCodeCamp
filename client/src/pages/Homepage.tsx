@@ -3,7 +3,7 @@ import {Typography, Button} from '@mui/material';
 import {Box} from '@mui/system'; 
 // import Navbar from '../components/Navbar'; 
 import {useNavigate} from 'react-router-dom'; 
-import Firstpage from './Firstpage'; 
+import Firstpage from './content/Firstpage'; 
 
 const Homepage = (props: {name: string}) => {
 	const navigate = useNavigate(); 
